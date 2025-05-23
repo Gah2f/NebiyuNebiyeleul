@@ -5,7 +5,7 @@ function Navigation() {
   return (
     <ul className="nav-ul">
       <li className="nav-li">
-        <a className="nav-link" href="#home">
+        <a className="nav-link" href="#/">
           {" "}
           Home{" "}
         </a>
@@ -19,7 +19,7 @@ function Navigation() {
       <li className="nav-li">
         <a className="nav-link" href="#work">
           {" "}
-          Work{" "}
+          Experiance{" "}
         </a>
       </li>
       <li className="nav-li">
@@ -38,7 +38,7 @@ function Nav() {
     <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
       <div className="mx-auto c-space max-w-7xl">
         <div className="flex items-center justify-between py-2 sm:py-0">
-          <a className="text-4xl font-bold transition-colors text-neutral-400 hover:text-white">
+          <a  className="text-4xl font-bold transition-colors text-neutral-400 hover:text-white">
             Nebiyu Nebiyeleul
           </a>
           <button

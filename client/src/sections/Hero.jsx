@@ -1,52 +1,25 @@
-import { Canvas, useFrame } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
 import ParallaxBackground from "../components/ParallaxBackground";
-import { Astronaut } from "../components/Astronaut";
 import { useMediaQuery } from "react-responsive";
-import { easing } from "maath";
-import { Float } from "@react-three/drei";
-import { Suspense } from "react";
 import Loader from "../components/Loader";
 
 function Hero() {
-  const isMobile = useMediaQuery({ maxWidth: 853 });
   return (
-    <section className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space">
+    <section
+      id="/"
+      className="min-h-screen flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start gap-8 p-4 md:p-12 overflow-hidden"
+    >
       <ParallaxBackground />
 
       <HeroText />
-      <figure
-        className="absolute inset-0"
-        style={{
-          width: "100vw",
-          height: "100vh",
-        }}
-      >
-        <Canvas camera={{ position: [0, 1, 3] }}>
-          <Suspense fallback={<Loader />}>
-            <Float>
-              <Astronaut
-                scale={isMobile && 0.23}
-                position={isMobile && [0, -1.5, 0]}
-              />
-            </Float>
-            <Rig />
-          </Suspense>
-        </Canvas>
-      </figure>
+
+      <img
+        src="assets/Astro.png"
+        alt="Astronaut image"
+        className="h-100 w-100  -z-40 md:-z-20 md:h-80 md:w-80 lg:h-96 lg:w-96 xl:h-[591px] xl:w-[500px] object-contain transition-all duration-300 hover:scale-105"
+      />
     </section>
   );
-}
-
-function Rig() {
-  return useFrame((state, delta) => {
-    easing.damp3(
-      state.camera.position,
-      [state.mouse.x / 10, 1 + state.mouse.y / 10, 3],
-      0.5,
-      delta
-    );
-  });
 }
 
 export default Hero;
