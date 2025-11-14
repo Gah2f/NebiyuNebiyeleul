@@ -107,7 +107,7 @@ function About() {
                 </span>
                 <div className="border-2 border-black/50 rounded-lg p-6 bg-primary/80 cursor-pointer ">
                   <a
-                    href="/MyResume#new.pdf"
+                    href="/ResumeofNebiyuNebiyeleul.pdf"
                     download
                     className="flex items-center gap-2 text-blue-600"
                   >
