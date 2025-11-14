@@ -245,27 +245,6 @@ export const experiences = [
       "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
     ],
   },
-  {
-  title: "Frontend Developer Intern",
-  job: "Kuraz Tech",
-  date: "2025-Present",
-  contents: [
-    "Developed and maintained user interfaces using React and modern frontend tools.",
-    "Collaborated with the design team to implement responsive and interactive web components.",
-    "Optimized web applications for performance and accessibility."
-  ],
-},
-{
-  title: "Backend Developer Intern",
-  job: "Infnova Technologies",
-  date: "2025-Present",
-  contents: [
-    "Built and maintained RESTful APIs using Node.js",
-    "Implemented backend services to support web applications and improve scalability.",
-    "Worked with the team to integrate APIs with frontend applications and ensure smooth functionality."
-  ],
-},
-
 ];
 export const reviews = [
   {
